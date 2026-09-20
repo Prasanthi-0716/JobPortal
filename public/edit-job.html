@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Edit Job - Job Portal</title>
+
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+  <nav>
+
+    <h2>Job Portal</h2>
+
+    <div class="nav-links">
+
+      <a href="index.html">Home</a>
+
+      <a href="company-dashboard.html">Dashboard</a>
+
+      <a href="jobs.html">Browse Jobs</a>
+
+    </div>
+
+  </nav>
+
+
+  <div class="form-container">
+
+    <h1>Edit Job</h1>
+
+    <form id="editJobForm">
+
+      <label>Job Title</label>
+
+      <input
+        type="text"
+        id="title"
+        placeholder="Enter job title"
+        required
+      >
+
+
+      <label>Company Name</label>
+
+      <input
+        type="text"
+        id="company"
+        placeholder="Enter company name"
+        required
+      >
+
+
+      <label>Location</label>
+
+      <input
+        type="text"
+        id="location"
+        placeholder="Enter location"
+        required
+      >
+
+
+      <label>Salary</label>
+
+      <input
+        type="text"
+        id="salary"
+        placeholder="Example: 5 LPA"
+        required
+      >
+
+
+      <label>Skills</label>
+
+      <input
+        type="text"
+        id="skills"
+        placeholder="Example: HTML, CSS, JavaScript"
+        required
+      >
+
+
+      <label>Job Description</label>
+
+      <textarea
+        id="description"
+        placeholder="Enter job description"
+        required
+      ></textarea>
+
+
+      <button type="submit">
+        Update Job
+      </button>
+
+    </form>
+
+    <p id="message"></p>
+
+  </div>
+
+
+  <script src="js/edit-job.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>Company Dashboard | JobPortal</title>
+
+  <link
+    rel="stylesheet"
+    href="css/style.css"
+  >
+
+</head>
+
+
+<body>
+
+
+  <!-- TOP NAVIGATION -->
+
+  <nav>
+
+    <h2>
+      JobPortal
+    </h2>
+
+
+    <div class="nav-links">
+
+      <a href="index.html">
+        Home
+      </a>
+
+      <a href="jobs.html">
+        Browse Jobs
+      </a>
+
+      <a href="company-dashboard.html">
+        Dashboard
+      </a>
+
+      <a
+        href="#"
+        onclick="logout()"
+      >
+        Logout
+      </a>
+
+    </div>
+
+  </nav>
+
+
+  <!-- SIDEBAR -->
+
+  <aside class="dashboard-sidebar">
+
+    <div class="sidebar-title">
+      Company
+    </div>
+
+
+    <a
+      href="company-dashboard.html"
+      class="sidebar-link active"
+    >
+
+      <span class="sidebar-icon">
+        ▦
+      </span>
+
+      Dashboard
+
+    </a>
+
+
+    <a
+      href="post-job.html"
+      class="sidebar-link"
+    >
+
+      <span class="sidebar-icon">
+        +
+      </span>
+
+      Post Job
+
+    </a>
+
+
+    <a
+      href="#myJobs"
+      class="sidebar-link"
+      onclick="viewMyJobs()"
+    >
+
+      <span class="sidebar-icon">
+        💼
+      </span>
+
+      My Jobs
+
+    </a>
+
+
+    <a
+      href="#applicants"
+      class="sidebar-link"
+      onclick="viewApplicants()"
+    >
+
+      <span class="sidebar-icon">
+        👥
+      </span>
+
+      Applicants
+
+    </a>
+
+
+    <a
+      href="jobs.html"
+      class="sidebar-link"
+    >
+
+      <span class="sidebar-icon">
+        🔍
+      </span>
+
+      Browse Jobs
+
+    </a>
+
+
+    <a
+      href="#"
+      class="sidebar-link"
+      onclick="logout()"
+    >
+
+      <span class="sidebar-icon">
+        ↪
+      </span>
+
+      Logout
+
+    </a>
+
+  </aside>
+
+
+  <!-- MAIN CONTENT -->
+
+  <main class="dashboard">
+
+
+    <!-- HEADER -->
+
+    <div class="dashboard-header">
+
+      <div>
+
+        <h1>
+          Company Dashboard
+        </h1>
+
+        <p>
+          Manage your job postings and applicants.
+        </p>
+
+      </div>
+
+    </div>
+
+
+    <!-- WELCOME -->
+
+    <div class="welcome-card">
+
+      <h2 id="welcome">
+        Welcome!
+      </h2>
+
+      <p>
+        Manage your recruitment activities
+        from one place.
+      </p>
+
+    </div>
+
+
+    <!-- STATISTICS -->
+
+    <div class="stats-grid">
+
+
+      <div class="stat-card">
+
+        <div class="stat-icon">
+          💼
+        </div>
+
+        <div class="stat-content">
+
+          <h3>
+            Total Jobs
+          </h3>
+
+          <div
+            class="stat-number"
+            id="totalJobs"
+          >
+            0
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <div class="stat-card">
+
+        <div class="stat-icon">
+          👥
+        </div>
+
+        <div class="stat-content">
+
+          <h3>
+            Total Applicants
+          </h3>
+
+          <div
+            class="stat-number"
+            id="totalApplicants"
+          >
+            0
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <div class="stat-card">
+
+        <div class="stat-icon">
+          ✓
+        </div>
+
+        <div class="stat-content">
+
+          <h3>
+            Recruitment Activity
+          </h3>
+
+          <div
+            class="stat-number"
+            id="activityStatus"
+          >
+            Active
+          </div>
+
+        </div>
+
+      </div>
+
+
+    </div>
+
+
+    <!-- COMPANY INFORMATION + ACTIONS -->
+
+    <div class="content-grid">
+
+
+      <!-- PROFILE -->
+
+      <div class="profile-card">
+
+        <div class="profile-header">
+
+          <div class="profile-avatar">
+            🏢
+          </div>
+
+          <div>
+
+            <h2>
+              Company Profile
+            </h2>
+
+            <p>
+              Account information
+            </p>
+
+          </div>
+
+        </div>
+
+
+        <div class="profile-row">
+
+          <span class="profile-label">
+            Company
+          </span>
+
+          <span
+            class="profile-value"
+            id="profileName"
+          >
+          </span>
+
+        </div>
+
+
+        <div class="profile-row">
+
+          <span class="profile-label">
+            Email
+          </span>
+
+          <span
+            class="profile-value"
+            id="profileEmail"
+          >
+          </span>
+
+        </div>
+
+
+        <div class="profile-row">
+
+          <span class="profile-label">
+            Account Type
+          </span>
+
+          <span
+            class="profile-value"
+            id="profileRole"
+          >
+          </span>
+
+        </div>
+
+
+      </div>
+
+
+      <!-- QUICK ACTIONS -->
+
+      <div class="quick-actions">
+
+        <h2 class="section-title">
+          Quick Actions
+        </h2>
+
+
+        <div class="action-list">
+
+
+          <div class="action-item">
+
+            <h3>
+              Create Job
+            </h3>
+
+            <p>
+              Publish a new opportunity.
+            </p>
+
+            <a href="post-job.html">
+
+              <button>
+                Post Job
+              </button>
+
+            </a>
+
+          </div>
+
+
+          <div class="action-item">
+
+            <h3>
+              Manage Jobs
+            </h3>
+
+            <p>
+              Edit or remove your postings.
+            </p>
+
+            <button
+              onclick="viewMyJobs()"
+            >
+              View My Jobs
+            </button>
+
+          </div>
+
+
+          <div class="action-item">
+
+            <h3>
+              Applicants
+            </h3>
+
+            <p>
+              Review and update applications.
+            </p>
+
+            <button
+              onclick="viewApplicants()"
+            >
+              View Applicants
+            </button>
+
+          </div>
+
+
+          <div class="action-item">
+
+            <h3>
+              Browse Portal
+            </h3>
+
+            <p>
+              View published opportunities.
+            </p>
+
+            <a href="jobs.html">
+
+              <button>
+                Browse Jobs
+              </button>
+
+            </a>
+
+          </div>
+
+
+        </div>
+
+      </div>
+
+
+    </div>
+
+
+    <!-- MY JOBS -->
+
+    <section
+      class="dashboard-section"
+      id="myJobs"
+    >
+
+      <div class="section-header">
+
+        <div>
+
+          <h2>
+            My Jobs
+          </h2>
+
+          <p>
+            Manage the jobs posted by your company.
+          </p>
+
+        </div>
+
+
+        <button
+          onclick="viewMyJobs()"
+        >
+          Refresh
+        </button>
+
+      </div>
+
+
+      <p>
+        Click "View My Jobs" to load your
+        job postings.
+      </p>
+
+    </section>
+
+
+    <!-- APPLICANTS -->
+
+    <section
+      class="dashboard-section"
+      id="applicants"
+    >
+
+      <div class="section-header">
+
+        <div>
+
+          <h2>
+            Applicants
+          </h2>
+
+          <p>
+            Review students who applied to your jobs.
+          </p>
+
+        </div>
+
+
+        <button
+          onclick="viewApplicants()"
+        >
+          Refresh
+        </button>
+
+      </div>
+
+
+      <p>
+        Click "View Applicants" to load
+        applicants.
+      </p>
+
+    </section>
+
+
+  </main>
+
+
+  <script src="js/company.js"></script>
+
+</body>
+
+</html>

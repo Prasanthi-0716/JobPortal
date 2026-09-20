@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Jobs - Job Portal</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+
+    <nav>
+
+        <h2>Job Portal</h2>
+
+        <div class="nav-links">
+
+            <a href="index.html">Home</a>
+
+            <a href="student-dashboard.html">
+                Dashboard
+            </a>
+
+            <a href="login.html">
+                Login
+            </a>
+
+        </div>
+
+    </nav>
+
+
+    <!-- Jobs Section -->
+
+    <section class="jobs-section">
+
+        <h1>Available Jobs</h1>
+
+        <p>
+            Find a job that matches your skills.
+        </p>
+
+
+        <!-- Search -->
+
+        <div class="search-container">
+
+            <input
+                type="text"
+                id="search"
+                placeholder="Search by job title, company or skill"
+            >
+
+            <input
+                type="text"
+                id="location"
+                placeholder="Search by location"
+            >
+
+        </div>
+
+
+        <!-- Jobs will appear here -->
+
+        <div id="jobsContainer"></div>
+
+    </section>
+
+
+    <script src="js/jobs.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Post Job - Job Portal</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <nav>
+
+        <h2>Job Portal</h2>
+
+        <div class="nav-links">
+            <a href="company-dashboard.html">Dashboard</a>
+            <a href="index.html">Home</a>
+        </div>
+
+    </nav>
+
+
+    <div class="form-container">
+
+        <h1>Post a Job</h1>
+
+        <form id="jobForm">
+
+            <label>Job Title</label>
+
+            <input
+                type="text"
+                id="title"
+                placeholder="Example: Frontend Developer"
+                required
+            >
+
+
+            <label>Company Name</label>
+
+            <input
+                type="text"
+                id="company"
+                placeholder="Enter company name"
+                required
+            >
+
+
+            <label>Location</label>
+
+            <input
+                type="text"
+                id="location"
+                placeholder="Example: Hyderabad"
+                required
+            >
+
+
+            <label>Salary</label>
+
+            <input
+                type="text"
+                id="salary"
+                placeholder="Example: 5 LPA"
+                required
+            >
+
+
+            <label>Required Skills</label>
+
+            <input
+                type="text"
+                id="skills"
+                placeholder="Example: HTML, CSS, JavaScript"
+                required
+            >
+
+
+            <label>Job Description</label>
+
+            <textarea
+                id="description"
+                placeholder="Describe the job"
+                required
+            ></textarea>
+
+
+            <button type="submit">
+                Post Job
+            </button>
+
+        </form>
+
+        <p id="message"></p>
+
+    </div>
+
+
+    <script src="js/post-job.js"></script>
+
+</body>
+
+</html>

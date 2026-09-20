@@ -1,0 +1,12 @@
+[
+  {
+    "id": 1,
+    "companyId": 2,
+    "title": "Frontend Developer",
+    "company": "ABC Technologies",
+    "location": "Hyderabad",
+    "salary": "5 LPA",
+    "skills": "HTML, CSS, JavaScript",
+    "description": "Looking for a frontend developer with good knowledge of HTML, CSS and JavaScript."
+  }
+]

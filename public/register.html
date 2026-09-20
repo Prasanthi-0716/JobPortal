@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>Create Account | JobPortal</title>
+
+  <link
+    rel="stylesheet"
+    href="css/style.css"
+  >
+
+</head>
+
+
+<body class="auth-page">
+
+
+  <!-- ================================
+       NAVIGATION
+       ================================ -->
+
+  <nav class="main-nav">
+
+    <div class="brand">
+      JobPortal
+    </div>
+
+
+    <div class="nav-links">
+
+      <a href="index.html">
+        Home
+      </a>
+
+      <a href="jobs.html">
+        Jobs
+      </a>
+
+      <a href="login.html">
+        Login
+      </a>
+
+      <a
+        href="register.html"
+        class="active nav-register"
+      >
+        Register
+      </a>
+
+    </div>
+
+  </nav>
+
+
+
+  <!-- ================================
+       REGISTER SECTION
+       ================================ -->
+
+  <main class="auth-container register-container">
+
+
+    <!-- LEFT INFORMATION PANEL -->
+
+    <section class="auth-info register-info">
+
+      <div class="auth-brand-icon">
+        🚀
+      </div>
+
+
+      <h1>
+        Start Your Journey
+      </h1>
+
+
+      <p>
+        Create your JobPortal account and
+        connect with new opportunities.
+      </p>
+
+
+      <div class="auth-benefits">
+
+        <div class="auth-benefit">
+
+          <span>
+            ✓
+          </span>
+
+          <p>
+            Students can discover and apply for jobs
+          </p>
+
+        </div>
+
+
+        <div class="auth-benefit">
+
+          <span>
+            ✓
+          </span>
+
+          <p>
+            Companies can post job opportunities
+          </p>
+
+        </div>
+
+
+        <div class="auth-benefit">
+
+          <span>
+            ✓
+          </span>
+
+          <p>
+            Track applications and recruitment activity
+          </p>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- REGISTER FORM -->
+
+    <section class="auth-form-card register-card">
+
+      <div class="auth-form-header">
+
+        <h2>
+          Create Account
+        </h2>
+
+        <p>
+          Fill in your details to get started.
+        </p>
+
+      </div>
+
+
+
+      <form id="registerForm">
+
+
+        <!-- NAME -->
+
+        <div class="form-group">
+
+          <label for="name">
+            Full Name
+          </label>
+
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Enter your full name"
+            required
+          >
+
+        </div>
+
+
+
+        <!-- EMAIL -->
+
+        <div class="form-group">
+
+          <label for="email">
+            Email Address
+          </label>
+
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Enter your email"
+            required
+          >
+
+        </div>
+
+
+
+        <!-- PASSWORD -->
+
+        <div class="form-group">
+
+          <label for="password">
+            Password
+          </label>
+
+          <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="Create a password"
+            required
+          >
+
+        </div>
+
+
+
+        <!-- ROLE -->
+
+        <div class="form-group">
+
+          <label for="role">
+            Account Type
+          </label>
+
+          <select
+            id="role"
+            name="role"
+            required
+          >
+
+            <option
+              value=""
+              disabled
+              selected
+            >
+              Select account type
+            </option>
+
+            <option value="student">
+              Student
+            </option>
+
+            <option value="company">
+              Company
+            </option>
+
+          </select>
+
+        </div>
+
+
+
+        <!-- REGISTER BUTTON -->
+
+        <button
+          type="submit"
+          class="auth-submit-button"
+        >
+          Create Account
+        </button>
+
+
+        <!-- MESSAGE -->
+
+        <p
+          id="message"
+          class="auth-message"
+        ></p>
+
+
+      </form>
+
+
+
+      <div class="auth-footer">
+
+        <p>
+          Already have an account?
+        </p>
+
+        <a href="login.html">
+          Login here
+        </a>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <script src="js/register.js"></script>
+
+</body>
+
+</html>

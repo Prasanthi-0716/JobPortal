@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>Login | JobPortal</title>
+
+  <link
+    rel="stylesheet"
+    href="css/style.css"
+  >
+
+</head>
+
+
+<body class="auth-page">
+
+
+  <!-- ================================
+       NAVIGATION
+       ================================ -->
+
+  <nav class="main-nav">
+
+    <div class="brand">
+      JobPortal
+    </div>
+
+
+    <div class="nav-links">
+
+      <a href="index.html">
+        Home
+      </a>
+
+      <a href="jobs.html">
+        Jobs
+      </a>
+
+      <a
+        href="login.html"
+        class="active"
+      >
+        Login
+      </a>
+
+      <a
+        href="register.html"
+        class="nav-register"
+      >
+        Register
+      </a>
+
+    </div>
+
+  </nav>
+
+
+
+  <!-- ================================
+       LOGIN SECTION
+       ================================ -->
+
+  <main class="auth-container">
+
+
+    <!-- LEFT INFORMATION PANEL -->
+
+    <section class="auth-info">
+
+      <div class="auth-brand-icon">
+        💼
+      </div>
+
+
+      <h1>
+        Welcome Back!
+      </h1>
+
+
+      <p>
+        Sign in to continue your career journey
+        and manage your job applications.
+      </p>
+
+
+      <div class="auth-benefits">
+
+        <div class="auth-benefit">
+
+          <span>
+            ✓
+          </span>
+
+          <p>
+            Browse available job opportunities
+          </p>
+
+        </div>
+
+
+        <div class="auth-benefit">
+
+          <span>
+            ✓
+          </span>
+
+          <p>
+            Track your applications
+          </p>
+
+        </div>
+
+
+        <div class="auth-benefit">
+
+          <span>
+            ✓
+          </span>
+
+          <p>
+            Manage your professional profile
+          </p>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- LOGIN FORM -->
+
+    <section class="auth-form-card">
+
+      <div class="auth-form-header">
+
+        <h2>
+          Sign In
+        </h2>
+
+        <p>
+          Enter your account details below.
+        </p>
+
+      </div>
+
+
+
+      <form id="loginForm">
+
+
+        <!-- EMAIL -->
+
+        <div class="form-group">
+
+          <label for="email">
+            Email Address
+          </label>
+
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Enter your email"
+            required
+          >
+
+        </div>
+
+
+
+        <!-- PASSWORD -->
+
+        <div class="form-group">
+
+          <label for="password">
+            Password
+          </label>
+
+          <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="Enter your password"
+            required
+          >
+
+        </div>
+
+
+
+        <!-- LOGIN BUTTON -->
+
+        <button
+          type="submit"
+          class="auth-submit-button"
+        >
+          Login
+        </button>
+
+
+        <!-- MESSAGE -->
+
+        <p
+          id="message"
+          class="auth-message"
+        ></p>
+
+
+      </form>
+
+
+
+      <div class="auth-footer">
+
+        <p>
+          Don't have an account?
+        </p>
+
+        <a href="register.html">
+          Create an account
+        </a>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <script src="js/login.js"></script>
+
+</body>
+
+</html>
